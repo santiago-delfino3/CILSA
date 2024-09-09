@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{  /*ESTILOS MODO CLARO*/
+    background-color:#F7F7F7;
+    transition: .4s ease all;
+}
+
+body.dark{ /*ESTILOS MODO OSCURO*/
+
+    background-color: rgb(26, 26, 26);
+
+}
+
+.contenedor{ /*AJUSTES PARA EL CONTENEDOR*/
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+form{ /*ESTILOS MODO CLARO*/
+    background-color: rgb(224, 224, 252);
+    padding: 50px 50px 50px;
+    border-radius: 15px;
+    color: #005598;
+    
+}
+body.dark form{ /*ESTILOS MODO OSCURO*/
+    background-color: rgb(21, 20, 32);
+    color: rgb(208, 208, 208);
+
+}
+
+#divisor{ /*ESTILOS MODO CLARO*/
+    border: rgba(32, 162, 201, 0.247) 2px solid;
+}
+
+body.dark form #divisor{ /*ESTILOS MODO OSCURO*/
+    border: rgb(3, 139, 218) 2px solid;
+}
+
+.form-cont h1{ /*ESTILO PARA TEXTO*/
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.i-field{ /*ESTILO PARA INPUTS*/
+    text-align: left;
+    width: 100%;
+    border-radius: 3px;
+    margin: 10px;
+    display: grid;
+}
+
+input{ /*ESTILOS MODO CLARO*/
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(154, 184, 242);
+    border: none;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);   
+}
+
+body.dark input{ /*ESTILOS MODO OSCURO*/
+    background-color: rgb(41, 41, 41);
+    color: white;
+    
+}
+
+
+
+select{ /*ESTILOS MODO CLARO*/
+    width: 107%;
+    padding: 10px;
+    background-color: rgb(154, 184, 242);
+    border: none;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+
+}
+
+body.dark select{  /*ESTILOS MODO OSCURO*/
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+
+
+input::placeholder{  /*ESTILOS MODO CLARO*/
+    color: white;
+}
+
+
+body.dark input::placeholder{ /*ESTILOS MODO CLARO*/
+    color:rgb(218, 218, 218);
+}
+
+select::placeholder{ /*ESTILOS PARA AMBOS MODOS*/
+    color: white;
+}
+
+.btn-field{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content:center;
+}
+
+.btn-field button{ /*ESTILOS PARA AMBOS MODOS*/
+    font-size: 18px;
+    border-radius: 3px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #1871b5;
+    color: white;
+}
+
+
+#toggle{
+    display: none;
+}
+
+#label_toggle{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+body.dark #label_toggle{
+    color: white;
+}
+
+
+p{
+    margin-top: 10px;
+    background-color:transparent;
+    padding: 5px 3px;
+    border-radius: 6PX;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+body.dark p{
+    color: white;
+    background-color:transparent;
+}
